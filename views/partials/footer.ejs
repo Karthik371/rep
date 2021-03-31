@@ -1,0 +1,28 @@
+
+ 
+<script  >
+ 
+const ham = document.querySelector(".ham");
+const sidebar = document.querySelector(".side-bar");
+const nav = document.querySelector(".navbar-anima");
+ 
+
+
+ham.addEventListener("click",()=>{
+          sidebar.classList.toggle("active");
+          const state = sidebar.classList.contains("active")
+         if(state == true) { 
+                   nav.setAttribute("src","../images/x.svg")
+                   nav.classList.add("fadeout")
+                   nav.classList.remove("fadein")
+                  
+        }else{
+          nav.setAttribute("src","../images/menu.svg")
+          nav.classList.remove("fadeout")
+          nav.classList.add("fadein")
+        }
+});
+ 
+</script>
+</body>
+</html>

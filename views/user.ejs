@@ -1,0 +1,30 @@
+<!-- @format -->
+
+<%- include("./partials/header.ejs") -%>
+
+<div class="user-container">
+  <div class="user-contents">
+    <div class="user-conten-box">
+      <div class="user-texts">
+        <h2>Post by <%=userData.name%></h2>
+        <p>Poster On: <span> <%=userData.year%> </span></p>
+      </div>
+      <div class="posts-div">
+        <div class="user-img">
+          <img src="/uploads/<%=userData.img%>" alt="error" />
+        </div>
+        <div class="user-posts-2">
+          <p><%=userData.post %></p>
+        </div>
+      </div>
+
+      <div class="back-page">
+        <a href="/">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("./partials/footer.ejs") -%>
